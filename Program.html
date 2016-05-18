@@ -284,30 +284,104 @@
             set/p input= Enter your text here:
             <br />
             echo %input%
+            <br/>
             pause
         </p>
 
         <ins><h4 id="CMDCALC" style="color:lime">CMD Calculator</h4></ins>
 
         <p>
-
+            @echo off
+            <br/>
+            title Calc
+            <br/>
+            :loop
+            <br/>
+            cls
+            <br/>
+            set /p first=First number:
+            <br/>
+            echo.
+            <br/>
+            echo Mark (+ - x /)
+            <br/>
+            set /p mark=Mark:
+            <br/>
+            echo.
+            <br/>
+            set /p second=Second number:
+            <br/>
+            set /a final=%first%%mark%%second%
+            <br/>
+            echo.
+            <br/>
+            echo %final%
+            <br/>
+            pause
+            <br/>
+            goto loop
         </p>
 
         <ins><h4 id="Matrix" style="color:lime">Matrix Style</h4></ins>
 
         <p>
-
+            @echo off
+            <br/>
+            color 02
+            <br/>
+            :A
+            <br/>
+            echo %random%%random%%random%%random%
+            <br/>
+            goto A
         </p>
 
         <ins><h4 id="REG" style="color:lime">REGEDIT4</h4></ins>
 
         <p>
-
+            [HKEY_LOCAL_MACHINE\SYSTEM\Current Control Set\
+            Services\Tcpip\Parameters]
+            <br/>
+            "SackOpts"=dword:00000001
+            <br/>
+            "TcpWindowSize"=dowrd:0005ae4c
+            <br/>
+            "Tcp1323Opts"=dword:00000003
+            <br/>
+            "DefaultTTL"=dword00000040
+            <br/>
+            "EnablePMTUBDetect"=dword:00000000
+            <br/>
+            "EnablePMTUDiscovery"=dword:00000001
+            <br/>
+            "GlobalMaxTcpWindowSize"=dword:0005ae4c
+            <br/>
         </p>
 
         <ins><h4 id="speed">Speed Up Computer</h4></ins>
         <p>
-
+            Desktop -->
+            <br/>
+            My Computer --> (Right Click)
+            <br/>
+            Properties -->
+            <br/>
+            Hardware -->
+            <br/>
+            Device Manager -->
+            <br/>
+            Ports -->
+            <br/>
+            Communication Port --> (Double Click)
+            <br/>
+            Communication Port Properties -->
+            <br/>
+            Port Settings -->
+            <br/>
+            Increase Bps to 128000
+            <br/>
+            "Flow Control" Change 2 Hardware
+            <br/>
         </p>
 
 
