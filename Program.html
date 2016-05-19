@@ -8,17 +8,11 @@
     <title>Programming</title>
 </head>
 
-   <body class="no-js">
+<body class="no-js">
     <nav id="topNav">
         <ul>
             <li class="dropdown">
                 <a href="bk.html" class="dropbtn">Home</a>
-                <div class="dropdown-content">
-                </div>
-        </ul>
-        <ul>
-            <li class="dropdown">
-                <a href="https://check.torproject.org" class="dropbtn">Tor Check</a>
                 <div class="dropdown-content">
                 </div>
         </ul>
@@ -48,7 +42,6 @@
                 <div class="dropdown-content">
                     <a href="#.onion" title=".onion sites">.Onion Site List</a>
                     <a href="onioninfo.html" title="Onion Info">Onion Info</a>
-                    <a href="#ul2" title="Other Links">Other Useful Links</a>
                     <a href="#end" title="Conclusion">Conclusion</a>
 
                 </div>
@@ -80,7 +73,14 @@
 
                 </div>
         </ul>
+        <ul>
+            <li class="dropdown">
+                <a href="" class="dropbtn">Measurement Conversions</a>
+                <div class="dropdown-content">
+                    <a href="MeasConv.html" title="Meas. Conv.">Measurement Conversions</a>
 
+                </div>
+        </ul>
         <ul>
             <li class="dropdown" id="Videos">
                 <a href="#videos" class="dropbtn">Videos</a>
@@ -104,21 +104,22 @@
             <li class="dropdown" id="Useful Links">
                 <a href="#Useful Links" class="dropbtn">Useful Links</a>
                 <div class="dropdown-content">
+                    <a href="https://check.torproject.org" target="_blank">Tor Check</a>
                     <a href="https://www.google.com" target="_blank">Google</a>
                     <a href="https://www.deeperweb.com" target="_blank">Deeper Web</a>
                     <a href="http://www.dummies.com" target="_blank">For Dummies.com</a>
                     <a href="http://1000lifehacks.com" target="_blank">Life Hacks.com</a>
-                    <a href="https://www.torproject.org/projects/torbrowser.html.en">Tor Project</a>
-                    <a href="https://tails.boum.org/">The Amnesic Incognito Live System (TAILS)</a>
-                    <a href="https://guardianproject.info/apps/orbot/">Orbot (Tor for Android)</a>
-                    <a href="https://www.torproject.org/docs/documentation.html.en">Tor Documentation</a>
-                    <a href="http://vlib.org/">Vlib</a>
-                    <a href="http://deep-web.org/how-to-research/deep-web-search-engines/">Deep-Web.org</a>
-                    <a href="http://nsarchive.gwu.edu/search.html">National Security Archive</a>
-                    <a href="http://library.si.edu/">Smithsonian Libraries</a>
-                    <a href="http://www.osti.gov/home/">US Dept. of Energy OSTI</a>
-                    <a href="https://www.quandl.com/">Quandl (Financial and Economic Database)</a>
-                    <a href="http://eric.ed.gov/">Institute of Education Sciences</a>
+                    <a href="https://www.torproject.org/projects/torbrowser.html.en" target="_blank">Tor Project</a>
+                    <a href="https://tails.boum.org/" target="_blank">The Amnesic Incognito Live System (TAILS)</a>
+                    <a href="https://guardianproject.info/apps/orbot/" target="_blank">Orbot (Tor for Android)</a>
+                    <a href="https://www.torproject.org/docs/documentation.html.en" target="_blank">Tor Documentation</a>
+                    <a href="http://vlib.org/" target="_blank">Vlib</a>
+                    <a href="http://deep-web.org/how-to-research/deep-web-search-engines/" target="_blank">Deep-Web.org</a>
+                    <a href="http://nsarchive.gwu.edu/search.html" target="_blank">National Security Archive</a>
+                    <a href="http://library.si.edu/" target="_blank">Smithsonian Libraries</a>
+                    <a href="http://www.osti.gov/home/" target="_blank">US Dept. of Energy OSTI</a>
+                    <a href="https://www.quandl.com/" target="_blank">Quandl (Financial and Economic Database)</a>
+                    <a href="http://eric.ed.gov/" target="_blank">Institute of Education Sciences</a>
 
                 </div>
         </ul>
@@ -139,249 +140,249 @@
     <br />
     <hr />
     <br />
-        <bold><ins><h1 id="Friendly" style="color:red">Friendly Programs:</h1></ins></bold>
+    <bold><ins><h1 id="Friendly" style="color:red">Friendly Programs:</h1></ins></bold>
+    <br />
+    <ins><h4 id="30sec" style="color:lime">30 Second Timer (.bat)</h4></ins>
+    <p>
+        @echo off
+        <br>
+        for /L %%A in (30,-1,0) do (echo %%A
+        <br />ping localhost -n 2 >nul)
         <br />
-        <ins><h4 id="30sec" style="color:lime">30 Second Timer (.bat)</h4></ins>
-        <p>
-            @echo off
-            <br>
-            for /L %%A in (30,-1,0) do (echo %%A
-            <br />ping localhost -n 2 >nul)
-            <br/>
-            pause
-            </p>
-       
-        <br/>
-            <h4 id="Password" style="color:lime"><ins>Password (.vbs)</ins></h4>
-        <p>
-            @echo off
-            <br />
-            cls
-            <br />
-            :password
-            <br />
-            set input=
-            <br />
-            set/p input=password (Input then press Enter)
-            <br />
-            if %input%==(Put Password Here) goto Yes
-            <br />
-            if not %input%==(Put Password Here) goto No
-            <br />
-            <br />
-            <br />
-            :Yes
-            <br />
-            <sup>(Put Batch File  or Website Here)</sup>  <sup>((ex:Start c:\(file location))</sup>
-            <br />
-            <br />
-            No:
-            <br />
-            echo Incorrect Password
-            <br />
-            goto password
-            <br />
-            <br />
-            <br />
-        </p>
-        <br/>
-        <ins><h4 id="Harmless" style="color:lime">Harmless Virus (.bat)</h4></ins>
-        <p>
-            Start Virus.bat
-            <br />
-            Virus.bat
+        pause
+    </p>
 
-            <br />
-        </p>
-        <ins><h4 id="RIA" style="color:lime">Renew Internet Access (.bat)</h4></ins>
-        <p>
-            @Echo off
-            <br />
-            Ipconfig /renew
-        </p>
+    <br />
+    <h4 id="Password" style="color:lime"><ins>Password (.vbs)</ins></h4>
+    <p>
+        @echo off
+        <br />
+        cls
+        <br />
+        :password
+        <br />
+        set input=
+        <br />
+        set/p input=password (Input then press Enter)
+        <br />
+        if %input%==(Put Password Here) goto Yes
+        <br />
+        if not %input%==(Put Password Here) goto No
+        <br />
+        <br />
+        <br />
+        :Yes
+        <br />
+        <sup>(Put Batch File  or Website Here)</sup>  <sup>((ex:Start c:\(file location))</sup>
+        <br />
+        <br />
+        No:
+        <br />
+        echo Incorrect Password
+        <br />
+        goto password
+        <br />
+        <br />
+        <br />
+    </p>
+    <br />
+    <ins><h4 id="Harmless" style="color:lime">Harmless Virus (.bat)</h4></ins>
+    <p>
+        Start Virus.bat
+        <br />
+        Virus.bat
 
-        <ins><h4 id="70s" style="color:lime">Disco (.vbs)</h4></ins>
+        <br />
+    </p>
+    <ins><h4 id="RIA" style="color:lime">Renew Internet Access (.bat)</h4></ins>
+    <p>
+        @Echo off
+        <br />
+        Ipconfig /renew
+    </p>
 
-        <p>
-            @echo off
-            <br />
-            :s
-            <br />
-            echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
-            <br />
-            echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*
-            <br />
-            echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*
-            <br />
-            echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
-            <br />
-            echo&nbsp;&nbsp;&nbsp;&nbsp;******
-            <br />
-            echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
-            <br />
-            echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*
-            <br />
-            echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*
-            <br />
-            echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            color&nbsp;(1-99)
-            <br />
-            goto s
-            <br />
-        </p>
+    <ins><h4 id="70s" style="color:lime">Disco (.vbs)</h4></ins>
 
-        <ins><h4 id="CaO" style="color:lime">Create and Open Folder (.bat)</h4></ins>
+    <p>
+        @echo off
+        <br />
+        :s
+        <br />
+        echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+        <br />
+        echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*
+        <br />
+        echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*
+        <br />
+        echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+        <br />
+        echo&nbsp;&nbsp;&nbsp;&nbsp;******
+        <br />
+        echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+        <br />
+        echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*
+        <br />
+        echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*
+        <br />
+        echo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        color&nbsp;(1-99)
+        <br />
+        goto s
+        <br />
+    </p>
 
-        <p>
-            @echo off
-            <br />
-            md name of folder
-            <br />
-            start name of folder
-            <br />
-        </p>
+    <ins><h4 id="CaO" style="color:lime">Create and Open Folder (.bat)</h4></ins>
 
-        <ins><h4 id="Echotxt" style="color:lime">Echo Entered Text (.bat)</h4></ins>
+    <p>
+        @echo off
+        <br />
+        md name of folder
+        <br />
+        start name of folder
+        <br />
+    </p>
 
-        <p>
-            @echo off
-            <br />
-            color 0b
-            <br />
-            set input=
-            <br />
-            set/p input= Enter your text here:
-            <br />
-            echo %input%
-            <br/>
-            pause
-        </p>
+    <ins><h4 id="Echotxt" style="color:lime">Echo Entered Text (.bat)</h4></ins>
 
-        <ins><h4 id="CMDCALC" style="color:lime">CMD Calculator</h4></ins>
+    <p>
+        @echo off
+        <br />
+        color 0b
+        <br />
+        set input=
+        <br />
+        set/p input= Enter your text here:
+        <br />
+        echo %input%
+        <br />
+        pause
+    </p>
 
-        <p>
-            @echo off
-            <br/>
-            title Calc
-            <br/>
-            :loop
-            <br/>
-            cls
-            <br/>
-            set /p first=First number:
-            <br/>
-            echo.
-            <br/>
-            echo Mark (+ - x /)
-            <br/>
-            set /p mark=Mark:
-            <br/>
-            echo.
-            <br/>
-            set /p second=Second number:
-            <br/>
-            set /a final=%first%%mark%%second%
-            <br/>
-            echo.
-            <br/>
-            echo %final%
-            <br/>
-            pause
-            <br/>
-            goto loop
-        </p>
+    <ins><h4 id="CMDCALC" style="color:lime">CMD Calculator</h4></ins>
 
-        <ins><h4 id="Matrix" style="color:lime">Matrix Style</h4></ins>
+    <p>
+        @echo off
+        <br />
+        title Calc
+        <br />
+        :loop
+        <br />
+        cls
+        <br />
+        set /p first=First number:
+        <br />
+        echo.
+        <br />
+        echo Mark (+ - x /)
+        <br />
+        set /p mark=Mark:
+        <br />
+        echo.
+        <br />
+        set /p second=Second number:
+        <br />
+        set /a final=%first%%mark%%second%
+        <br />
+        echo.
+        <br />
+        echo %final%
+        <br />
+        pause
+        <br />
+        goto loop
+    </p>
 
-        <p>
-            @echo off
-            <br/>
-            color 02
-            <br/>
-            :A
-            <br/>
-            echo %random%%random%%random%%random%
-            <br/>
-            goto A
-        </p>
+    <ins><h4 id="Matrix" style="color:lime">Matrix Style</h4></ins>
 
-        <ins><h4 id="REG" style="color:lime">REGEDIT4</h4></ins>
+    <p>
+        @echo off
+        <br />
+        color 02
+        <br />
+        :A
+        <br />
+        echo %random%%random%%random%%random%
+        <br />
+        goto A
+    </p>
 
-        <p>
-            [HKEY_LOCAL_MACHINE\SYSTEM\Current Control Set\
-            Services\Tcpip\Parameters]
-            <br/>
-            "SackOpts"=dword:00000001
-            <br/>
-            "TcpWindowSize"=dowrd:0005ae4c
-            <br/>
-            "Tcp1323Opts"=dword:00000003
-            <br/>
-            "DefaultTTL"=dword00000040
-            <br/>
-            "EnablePMTUBDetect"=dword:00000000
-            <br/>
-            "EnablePMTUDiscovery"=dword:00000001
-            <br/>
-            "GlobalMaxTcpWindowSize"=dword:0005ae4c
-            <br/>
-        </p>
+    <ins><h4 id="REG" style="color:lime">REGEDIT4</h4></ins>
 
-        <ins><h4 id="speed">Speed Up Computer</h4></ins>
-        <p>
-            Desktop -->
-            <br/>
-            My Computer --> (Right Click)
-            <br/>
-            Properties -->
-            <br/>
-            Hardware -->
-            <br/>
-            Device Manager -->
-            <br/>
-            Ports -->
-            <br/>
-            Communication Port --> (Double Click)
-            <br/>
-            Communication Port Properties -->
-            <br/>
-            Port Settings -->
-            <br/>
-            Increase Bps to 128000
-            <br/>
-            "Flow Control" Change 2 Hardware
-            <br/>
-        </p>
+    <p>
+        [HKEY_LOCAL_MACHINE\SYSTEM\Current Control Set\
+        Services\Tcpip\Parameters]
+        <br />
+        "SackOpts"=dword:00000001
+        <br />
+        "TcpWindowSize"=dowrd:0005ae4c
+        <br />
+        "Tcp1323Opts"=dword:00000003
+        <br />
+        "DefaultTTL"=dword00000040
+        <br />
+        "EnablePMTUBDetect"=dword:00000000
+        <br />
+        "EnablePMTUDiscovery"=dword:00000001
+        <br />
+        "GlobalMaxTcpWindowSize"=dword:0005ae4c
+        <br />
+    </p>
+
+    <ins><h4 id="speed">Speed Up Computer</h4></ins>
+    <p>
+        Desktop -->
+        <br />
+        My Computer --> (Right Click)
+        <br />
+        Properties -->
+        <br />
+        Hardware -->
+        <br />
+        Device Manager -->
+        <br />
+        Ports -->
+        <br />
+        Communication Port --> (Double Click)
+        <br />
+        Communication Port Properties -->
+        <br />
+        Port Settings -->
+        <br />
+        Increase Bps to 128000
+        <br />
+        "Flow Control" Change 2 Hardware
+        <br />
+    </p>
 
 
-    </body>
+</body>
 </html>
